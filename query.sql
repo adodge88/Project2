@@ -1,10 +1,10 @@
 DROP TABLE confirmed;	
 CREATE TABLE confirmed (
-	id                  SERIAL,
-	Province_State VARCHAR,
-	Country_Region VARCHAR,
-	Lat FLOAT,
-	Long FLOAT,
+	id SERIAL,
+	province_state VARCHAR,
+	country_region VARCHAR,
+	lat FLOAT,
+	long FLOAT,
 	"1/22/20" INT,
 	"1/23/20"	INT,
 	"1/24/20"	INT,
@@ -35,17 +35,29 @@ CREATE TABLE confirmed (
 	"2/18/20" INT,
 	"2/19/20" INT,
 	"2/20/20" INT,
+	"2/21/20" INT,
+	"2/22/20" INT,
+	"2/23/20" INT,
+	"2/24/20" INT,
+	"2/25/20" INT,
+	"2/26/20" INT,
+	"2/27/20" INT,
+	"2/28/20" INT,
+	"2/29/20" INT,
+	"3/1/20" INT,
+	"3/2/20" INT,
+	"3/3/20" INT,
+	"3/4/20" INT,
 	PRIMARY KEY (id)
 );
-SELECT * FROM confirmed;
 
 DROP TABLE deaths;	
 CREATE TABLE deaths (
-	id                  SERIAL,
-	Province_State VARCHAR,
-	Country_Region VARCHAR,
-	Lat FLOAT,
-	Long FLOAT,
+	id SERIAL,
+	province_state VARCHAR,
+	country_region VARCHAR,
+	lat FLOAT,
+	long FLOAT,
 	"1/22/20" INT,
 	"1/23/20"	INT,
 	"1/24/20"	INT,
@@ -76,17 +88,30 @@ CREATE TABLE deaths (
 	"2/18/20" INT,
 	"2/19/20" INT,
 	"2/20/20" INT,
+	"2/21/20" INT,
+	"2/22/20" INT,
+	"2/23/20" INT,
+	"2/24/20" INT,
+	"2/25/20" INT,
+	"2/26/20" INT,
+	"2/27/20" INT,
+	"2/28/20" INT,
+	"2/29/20" INT,
+	"3/1/20" INT,
+	"3/2/20" INT,
+	"3/3/20" INT,
+	"3/4/20" INT,
 	PRIMARY KEY (id)
 );
 
 
 DROP TABLE recovered;	
 CREATE TABLE recovered (
-	id                  SERIAL,
-	Province_State VARCHAR,
-	Country_Region VARCHAR,
-	Lat FLOAT,
-	Long FLOAT,
+	id SERIAL,
+	province_state VARCHAR,
+	country_region VARCHAR,
+	lat FLOAT,
+	long FLOAT,
 	"1/22/20" INT,
 	"1/23/20"	INT,
 	"1/24/20"	INT,
@@ -117,7 +142,22 @@ CREATE TABLE recovered (
 	"2/18/20" INT,
 	"2/19/20" INT,
 	"2/20/20" INT,
+	"2/21/20" INT,
+	"2/22/20" INT,
+	"2/23/20" INT,
+	"2/24/20" INT,
+	"2/25/20" INT,
+	"2/26/20" INT,
+	"2/27/20" INT,
+	"2/28/20" INT,
+	"2/29/20" INT,
+	"3/1/20" INT,
+	"3/2/20" INT,
+	"3/3/20" INT,
+	"3/4/20" INT,
 	PRIMARY KEY (id)
 );
 
 SELECT * FROM recovered;
+SELECT * FROM confirmed;
+SELECT * FROM deaths;
