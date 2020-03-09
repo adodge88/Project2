@@ -1,1 +1,0 @@
-db_pass="00Hagase!"
